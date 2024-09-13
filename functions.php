@@ -81,3 +81,18 @@ if ( ! function_exists( 'bjork_register_block_styles' ) ) :
 	}
 	add_action( 'init', 'bjork_register_block_styles' );
 endif;
+
+
+// Updater
+
+require 'plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/ImThomasThorne/bjork-ThomasThorne',
+	__FILE__,
+	'bjork-thomasthorne'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
