@@ -2,7 +2,7 @@
 
 	Theme Name: Björk - ThomasThorne
     Text Domain: bjork-thomasthorne
-	Version: 1.0.5
+	Version: 1.0.6
 	Description: Author: Thomas Thorne
 	Author URI: https://thomasthorne.me/
 	Theme URI: https://github.com/ImThomasThorne/bjork-ThomasThorne
@@ -386,4 +386,18 @@ ol.wp-block-comment-template {
 
 .wp-block-search__button {
   margin: 0 0 0 0.75em;
+}
+
+/* 
+
+  Nav Hover
+
+*/
+
+.wp-block-navigation-item__content > span {
+  color: var(--wp--preset--color--foreground);
+}
+
+.wp-block-navigation-item__content:hover > span {
+  color: var(--wp--preset--color--secondary);
 }
